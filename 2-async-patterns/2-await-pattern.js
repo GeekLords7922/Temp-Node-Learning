@@ -1,6 +1,5 @@
 const {readFile} = require('fs')
-const { reject } = require('lodash')
-const { resolve } = require('path')
+
 
 const getText = (path) => {
     return new Promise((resolve, reject) => {
@@ -15,6 +14,7 @@ const getText = (path) => {
     })
 
 }
+
 
 //getText('./content/First.txt').then((result)=>console.log(result)).catch((err)=>console.error(err))
 
